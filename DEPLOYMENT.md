@@ -51,20 +51,22 @@ npm i -g netlify-cli
 netlify deploy --prod --dir=dist
 ```
 
-### 3. GitHub Pages
-Add to `vite.config.js`:
-```javascript
-export default defineConfig({
-  base: '/aboutme/',
-  // ... rest of config
-})
-```
+### 3. GitHub Pages (Configured)
+This project is already configured for GitHub Pages deployment with GitHub Actions.
 
-Then build and deploy:
-```bash
-npm run build
-# Push dist folder to gh-pages branch
-```
+**Automatic Deployment:**
+- Every push to the `main` branch automatically builds and deploys to GitHub Pages
+- The workflow file is located at `.github/workflows/deploy.yml`
+- The site will be available at: `https://fernius07.github.io/aboutme/`
+
+**Repository Settings:**
+Make sure GitHub Pages is configured in your repository settings:
+1. Go to Settings → Pages
+2. Under "Build and deployment", select "GitHub Actions" as the source
+3. The workflow will automatically deploy on the next push to main
+
+**Manual Deployment:**
+If needed, you can manually trigger the deployment from the Actions tab in GitHub.
 
 ### 4. Static Hosting
 Build the project and upload the `dist` folder to any static hosting service:

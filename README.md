@@ -2,6 +2,10 @@
 
 A modern, professional personal portfolio website for **Iñigo Fernández García**, a Computer Engineering student at the University of Deusto. This portfolio showcases skills, projects, goals, and contact information with a sleek hacker-inspired aesthetic.
 
+## 🌐 Live Demo
+
+Visit the live site at: **[https://fernius07.github.io/aboutme/](https://fernius07.github.io/aboutme/)**
+
 ## ✨ Features
 
 - 🌐 **Bilingual Support** - Seamlessly switch between Spanish (ES) and English (EN)
