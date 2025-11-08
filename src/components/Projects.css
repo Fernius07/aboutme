@@ -1,0 +1,151 @@
+.projects {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 6rem 2rem;
+  background: var(--bg-secondary);
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.projects-coming-soon {
+  text-align: center;
+  padding: 3rem;
+}
+
+.loading-dots {
+  font-family: 'Courier New', monospace;
+  font-size: 4rem;
+  color: #00ffff;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.loading-dots span {
+  display: inline-block;
+}
+
+.coming-soon-text {
+  font-family: 'Courier New', monospace;
+  font-size: 2.5rem;
+  color: #00ffff;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+.coming-soon-description {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+}
+
+.placeholder-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.placeholder-card {
+  background: rgba(0, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.placeholder-card:hover {
+  border-color: rgba(0, 255, 255, 0.4);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+}
+
+.placeholder-header {
+  margin-bottom: 1.5rem;
+}
+
+.placeholder-title-bar {
+  height: 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 255, 255, 0.3),
+    rgba(0, 255, 255, 0.1)
+  );
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.placeholder-title-bar.short {
+  width: 60%;
+}
+
+.placeholder-content {
+  margin-bottom: 1.5rem;
+}
+
+.placeholder-line {
+  height: 12px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.05)
+  );
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.placeholder-line.short {
+  width: 75%;
+}
+
+.placeholder-footer {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.placeholder-tag {
+  width: 60px;
+  height: 25px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 255, 255, 0.2),
+    rgba(0, 255, 255, 0.1)
+  );
+  border-radius: 12px;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 4rem 1rem;
+  }
+
+  .placeholder-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .coming-soon-text {
+    font-size: 2rem;
+  }
+
+  .loading-dots {
+    font-size: 3rem;
+  }
+}
